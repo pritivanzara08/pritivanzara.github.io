@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfffd9a;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6rem;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4caf50; /* Green for high values */
+  position: relative;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo img {
+  width: auto;
+  height: 50px;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 1rem;
+}
+
+header li {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-content {
+  padding: 2rem;
+  border-radius: 10px;
+  padding-bottom: 6rem;
+}
+
+.hero-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: rgb(30, 35, 28);
+  text-align: center;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.footer {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #4caf50;
+}
+
+.footer .socials a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #a52a2a;
+  font-weight: bold;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    background-color: #a52a2a;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 8px;
+    display: none;
+  }
+
+  .nav.active ul {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+/* Optional Hamburger Button */
+.hamburger {
+  display: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}

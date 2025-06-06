@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehndi by Priti</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.PNG" alt="Mehndi by Priti Logo" />
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Mehndi by Priti</h1>
+        <p>Committed to making your special occasion a memorable one</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Connect with us :</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i>&nbsp;Facebook</a>
+        <a href="#"><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
+        <a href="#"><i class="fab fa-whatsapp"></i>&nbsp;Whatsapp</a>
+      </div>
+    </footer>
+    </html>
+
+  <script>
+  function toggleMenu() {
+    document.querySelector('.nav').classList.toggle('active');
+  }
+  </script>
+
+  </body>
